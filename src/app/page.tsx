@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import Button from '@mui/material/Button'
 import {
   ArrowBackIosIcon,
   ArrowForwardIosIcon,
@@ -51,13 +50,13 @@ const Home = (props: Props) => {
             </Tooltip>
           </div>
         </div>
-        <div className="flex gap-2 border-b-2">
+        <div className="flex gap-2 border-b-2 overflow-auto">
           <button
             className={`${
               index === 0
                 ? 'border-b-2 border-blue-500 text-blue-500'
                 : 'border-transparent'
-            } flex h-16 w-64 items-center justify-center  gap-4 border-b-2 px-8 py-2 hover:bg-gray-light`}
+            } flex h-16 min-w-48 items-center justify-center  gap-4 border-b-2 px-8 py-2 hover:bg-gray-light`}
             onClick={() => {
               setIndex(0)
             }}
@@ -70,7 +69,7 @@ const Home = (props: Props) => {
               index === 1
                 ? 'border-b-2 border-blue-500 text-blue-500'
                 : 'border-transparent'
-            } flex h-16 w-64 items-center justify-center  gap-4 border-b-2 px-8 py-2 hover:bg-gray-light`}
+            } flex h-16 min-w-48 items-center justify-center  gap-4 border-b-2 px-8 py-2 hover:bg-gray-light`}
             onClick={() => {
               setIndex(1)
             }}
@@ -83,7 +82,7 @@ const Home = (props: Props) => {
               index === 2
                 ? 'border-b-2 border-blue-500 text-blue-500'
                 : 'border-transparent'
-            } flex h-16 w-64 items-center justify-center  gap-4 border-b-2 px-8 py-2 hover:bg-gray-light`}
+            } flex h-16 min-w-48 items-center justify-center  gap-4 border-b-2 px-8 py-2 hover:bg-gray-light`}
             onClick={() => {
               setIndex(2)
             }}
