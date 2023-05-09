@@ -31,7 +31,7 @@ const SidebarMain = (props: Props) => {
           setOpenMainSidebar(!openMainSidebar)
         }}
         title="Sidebar"
-        className="h-10 w-10"
+        className="h-10 w-10 m-2"
       >
         <IconButton>
           <MenuIcon />
