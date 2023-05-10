@@ -44,7 +44,10 @@ export default function Navbar({}: Props) {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const [anchorElApp, setAnchorElApp] = useState<null | HTMLElement>(null)
 
-  const handleFormat = (event, newFormats) => {
+  const handleFormat = (
+    event: React.MouseEvent<HTMLElement>,
+    newFormats: string[]
+  ) => {
     setFormats(newFormats)
   }
   const open = Boolean(anchorEl)

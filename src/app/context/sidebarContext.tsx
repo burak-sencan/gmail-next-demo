@@ -10,7 +10,7 @@ type SidebarContextType = {
   setMainSidebarContent: React.Dispatch<React.SetStateAction<string>>
 }
 
-export const SidebarContext = createContext<SidebarContextType>(undefined)
+export const SidebarContext = createContext<SidebarContextType >({} as SidebarContextType)
 
 type SidebarProviderProps = {
   children: ReactNode

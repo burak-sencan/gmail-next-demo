@@ -1,10 +1,9 @@
+'use client'
 import './globals.css'
-import { useContext, useEffect } from 'react'
 import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
-import SidebarSecondary from './components/SidebarSecondary'
 import SidebarMain from './components/SidebarMain'
-import SidebarContext, { SidebarProvider } from './context/sidebarContext'
+import { SidebarProvider } from './context/sidebarContext'
 import Settings from './components/Settings'
 import SidebarMainExtend from './components/SidebarMainExtend'
 const inter = Inter({ subsets: ['latin'] })
